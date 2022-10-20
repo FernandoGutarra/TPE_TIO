@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Tepee</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1> Biblioteca virtual</h1>
+            <nav class="headerbar">
+                <!-- caja de registro, inicio, usuario y contraseña -->
+                <a href="index.html" id="btnInicio"><span>Inicio</span></a>
+                <a href="registro.html" id="registro"><span>Registrarse</span></a>
+                <form>
+                    <label for="user">Usuario</label>
+                    <input type="text" id="user">
+                    <label for="pass">Contraseña</label>
+                    <input type="text" id="pass">
+                    <input type="submit" value="Ingresar">
+                </form>
+            </nav>
+        </header>
+        <aside>
+            <div class="navBar">
+                <a href="catalogo.html" id="btnCatalogo">Catalogo</a>
+            </div>
+            <div class="navBar2">
+                <a id="genero">Genero</a>
+                <ul class="submenu ocultar">
+                    <li><a href="CuentosNinos.html">Ni&ntilde;os</a></li>
+                    <li><a href="Aventura.html">Aventura</a></li>
+                    <li><a href="Romance.html">Romance</a></li>
+                    <li><a href="Terror.html">Terror</a></li>
+                    <li><a href="Suspenso.html">Suspenso</a></li>
+                    <li><a href="Academicos.html">Academicos</a></li>
+                </ul>
+            </aside>
+        <article>
+            <div class=librosGenero>
+                <div class = libro>
+                    <img src="imagenes/elmasalla.jpg" alt="imagenes/fondopag.jpg"
+                    width="250"
+                    height="300">
+                    <h3>El mundo contra el más allá</h3>
+                    <h4>Juan Ponce</h4>
+                </div>
+                <div class = libro>
+                    <img src="imagenes/portadaconedit.jpg" alt="imagenes/fondopag.jpg"
+                    width="250"
+                    height="300">
+                        <h3>Edita esta portada con edit</h3>
+                        <h4>Berly Basinger</h4>
+                </div>
+                <div class = libro>
+                    <img src="imagenes/libro2.jpg" alt="imagenes/fondopag.jpg"
+                    width="250"
+                    height="300">
+                     <h3>Prohibido creer en historias<br> de amor</h3>
+                      <h4>Javier Ruescas</h4>
+                </div>
+                <div class = libro>
+                    <img src="imagenes/bebioluna.jpg" alt="imagenes/fondopag.jpg"
+                    width="250"
+                    height="300">
+                    <h3>La niña que bebió luz de luna</h3>
+                    <h4>Kelly Barnhill</h4>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
