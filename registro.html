@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="fondoRegistro">
+        <div class="header">
+            <h1> Biblioteca virtual</h1>
+            <div class="headerbar">
+                <a href="index.html" id="btnInicio">Inicio</a>
+                <a href="registro.html" id="registro"><span>Registrarse</span></a>
+                <form>
+                    <label for="user">Usuario</label>
+                    <input type="text" id="user">
+                    <label for="pass">Contraseña</label>
+                    <input type="text" id="pass">
+                    <input type="submit" value="Ingresar">
+                </form>
+            </div>
+        </div>
+            <form class="formRegistro"> <!--meti los input dentro del label para que esten relacionados-->
+                <label>Nombre <input type="text" required></label>   
+                
+                <label>Apellido <input type="text" required></label>
+                
+                <label>e-mail <input type="email" required></label>
+
+                <label>Usuario <input type="text" required></label>     
+                
+                <label>Contraseña <input type="password" id="password" required></label>
+
+                <label>Confirmar Contraseña <input type="password" id="password2" required></label>
+
+                <span id="captcha"></span> <!-- numero aleatorio de captcha generar-->
+                
+                <input type="text" id="captchaInput" required> <!-- ingresar numero de captcha -->
+            
+                <input type="submit" value="registrar" id="btn_registrar">
+                
+                <p id="mensaje"></p>
+                <p id="mensajePswd"></p>
+            </form>
+        </div>
+    <script src="js/captcha.js"></script>
+    </body>
+</html>
