@@ -19,26 +19,26 @@ function mostrarCaptcha(){
 mostrarCaptcha();
 
 function validarCaptcha() {
-   if (captchaCode.innerHTML === captchaInput.value){ //es necesario el triple= para acegurarse que el digito que se ingrese sea el mismo exacto//
-       console.log("es valido");
-       mensaje.innerHTML = "captcha valido";
-
-    }else{
-        console.log("es incorrecto");
-        mensaje.innerHTML = "captcha invalido";
-    }
-}
-
-function validarPassword(){//sett de la contrseña y confirmacion de la misma//
-    if (document.querySelector("#password").value!==document.querySelector("#password2").value){
-        document.querySelector("#mensajePswd").innerHTML = "contraseña no coincide";
-    }else{
-        document.querySelector("#mensajePswd").innerHTML = "contraseña valida";
-    }
-}
-btn_registrar.addEventListener("click", function (e){
-    e.preventDefault();//sin esto el programa nunca frena y se actualiza continuamente la pagina sin resultado//
-    validarCaptcha();
-    validarPassword(); 
-});
-
+    if (captchaCode.innerHTML === captchaInput.value){ //es necesario el triple= para acegurarse que el digito que se ingrese sea el mismo exacto//
+        console.log("es valido");
+        mensaje.innerHTML = "captcha valido";
+ 
+     }else{
+         console.log("es incorrecto");
+         mensaje.innerHTML = "captcha invalido";
+     }
+ }
+ 
+ function validarPassword(){//sett de la contrseña y confirmacion de la misma//
+     if (document.querySelector("#password").value!==document.querySelector("#password2").value){
+         document.querySelector("#mensajePswd").innerHTML = "contraseña no coincide";
+     }else{
+         document.querySelector("#mensajePswd").innerHTML = "contraseña valida";
+     }
+ }
+ btn_registrar.addEventListener("click", function (e){
+     e.preventDefault();//sin esto el programa nunca frena y se actualiza continuamente la pagina sin resultado//
+     validarCaptcha();
+     validarPassword(); 
+ });
+ 
