@@ -1,0 +1,227 @@
+.ocultar{
+    display: none; 
+ }
+ 
+ h1, h2{
+     text-align: center;
+     margin: 2px;
+     color: #ffffffee;
+     height: 70%;
+    font-size: 72px;
+ }
+ aside, h1, article, .body{
+     font-family: sans-serif;
+ }
+ 
+ .headerbar{
+     display:flex;
+     justify-content:flex-end;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 10pt;
+     background-color: #b5b4ff; /*esta es la barra de regristro*/
+ }
+ .navBar2:hover{
+     cursor: pointer;
+ }
+ 
+ #registro{
+     margin-right: 10px;
+     margin-left: 10px;
+ 
+ }
+ 
+ .navBar, .navBar2{
+     background-color: #616191;
+ }
+ .navBar a, .navBar2 a{
+     font-weight: bold;
+     text-decoration: none;
+     color:aliceblue;
+ }
+ 
+ .submenu {
+     position:absolute;
+     color:aliceblue;
+     list-style-type: none;
+     background-color: #616191b9;
+     padding-left: 45px;
+     padding-right: 40px;
+     padding-top: 10px;
+     padding-bottom: 10px; 
+ }
+ 
+ .header{
+     height: 16%;
+     margin: none;
+ }
+ 
+ .body{
+     display: grid;
+     height: 800px;
+     background-color: #b6cdde;
+     margin:none;
+ }
+ .populares , .recientes{
+     display: flex;
+     flex-direction: column;
+     background:#8583f8;
+     border: solid #fffefec9;
+     align-items: center;
+ }
+ button{
+     background: #616191;
+     color:aliceblue;
+     padding-left: 6px;
+     padding-right: 6px;
+     padding-top: 6px;
+     padding-bottom: 6px;
+     margin-right: 4px;
+     font-size: 10pt;
+     
+ }
+ input:invalid{
+     /* linea para que aparezca de color rojo el cuadrado hasta que posiciones un click encima de él */
+     border: solid red 2px;
+ }
+ 
+ .populares ul, .recientes ul{
+     display: grid;
+     grid-template-rows: auto;
+     text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+     color: rgba(0, 0, 0, 0.836);
+     font-size: 20pt;
+     list-style-type: none;
+     
+ }
+ 
+ .populares li, .recientes li{
+     background-image: url(../imagenes/fondo.jpg);
+     width: 100%;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin-top: 16px;
+     margin-left: 15px;
+     margin-right: 15px;
+ }
+ 
+ .librosGenero, .catalogo{
+     display: flex;
+     background-color: rgb(141, 175, 189);
+     flex-flow: wrap;
+ }
+ 
+ 
+ .libro{
+     display: flex;
+     flex-direction: column;
+     margin: 5px;
+     border:  navy solid 2px;
+     height: fit-content;
+     padding: 10px;
+ }
+ thead{
+     color: rgb(169, 204, 253);
+     text-align: center;    
+ }
+ table{
+ width: 90%;
+ height: 10%;
+ margin-left: 5%;
+ }
+ th{
+     background:rgb(154, 154, 173);
+     color:cornsilk;
+ }
+ 
+ td, #captcha{
+ 
+     background: #bbe3fd91;
+     color: rgba(25, 23, 49, 0.644);
+ }
+ td{
+     text-align: center;
+     border-right: 1px solid #01acd8;
+     padding: 0 1px;
+ }
+ 
+ .formRegistro{
+     /* caja de formulario para definir el tamaño exacto que queriamos */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     font-size: 20px;
+     background-color: white;
+     margin-left: 35%;
+     margin-right: 35%;
+     margin-top: 12%;
+     padding-top: 5%;
+     padding-left: 4%;
+     padding-right: 4%;
+ }
+ 
+ #captcha{
+     padding: 3px;
+     font-size: 25px;
+ }
+ 
+ .fondoRegistro{
+     height: 100%;
+     margin: none;
+ }
+ 
+ .fondoRegistro, h1{
+     background-image: url(../imagenes/fondo.jpg);
+ }
+ .resaltado{
+     background-color: rgba(255, 0, 0, 0.582);
+ }
+ .tabla1{
+     background:#8583f8;
+     width: 100%;
+ }
+ @media only screen and (min-width:800px) {
+ 
+     .tabla1{
+         background:#8583f8;
+         width: 100%;
+     }
+     article{
+         display: inline-flex;
+         flex-direction:row;
+         background:#8583f8;
+         width: 100%;
+     }
+     .populares,.recientes{
+         width:50%;
+     }
+     aside{
+         position: initial;
+         display: block;
+     }
+     .navBar, .navBar2{
+         background-color: #616191;
+         width: 100%;
+         text-align: center;
+     }
+     .navBar2> ul{
+         color:aliceblue;
+         list-style-type: none;
+         background-color: #616191b9;
+         padding-left: 10%;
+         margin-left: 35%;
+         padding-right: 10%;
+         padding-top: 10px;
+         padding-bottom: 10px; 
+         text-align: center;  
+     }
+     .submenu> li{
+         padding-left: 10%;
+         padding-right: 10%;
+         padding-bottom: 5%;
+     } 
+     h1, h2 {
+         height: 80%;
+     } 
+ }
