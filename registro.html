@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="fondoRegistro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca virtual</title>
+</head>
+
+<body>
+    <div class="fondoRegistro">
         <div class="header">
             <h1> Biblioteca virtual</h1>
             <div class="headerbar">
@@ -23,29 +25,46 @@
                 </form>
             </div>
         </div>
-            <form class="formRegistro"> <!--meti los input dentro del label para que esten relacionados-->
-                <label>Nombre <input type="text" required></label>   
-                
-                <label>Apellido <input type="text" required></label>
-                
-                <label>e-mail <input type="email" required></label>
+        <aside>
+            <div class="navBar">
+                <a href="catalogo.html" id="btnCatalogo">Catalogo</a>
+            </div>
+            <div class="navBar2">
+                <a id="genero">Genero</a>
+                <ul class="submenu ocultar">
+                    <li><a href="Aventura.html">Aventura</a></li>
+                    <li><a href="Romance.html">Romance</a></li>
+                    <li><a href="Terror.html">Terror</a></li>
+                    <li><a href="Suspenso.html">Suspenso</a></li>
+                    <li><a href="Academicos.html">Academicos</a></li>
+                </ul>
+        </aside>
+        <form class="formRegistro">
+            <!--meti los input dentro del label para que esten relacionados-->
+            <label>Nombre <input type="text" required></label>
 
-                <label>Usuario <input type="text" required></label>     
-                
-                <label>Contraseña <input type="password" id="password" required></label>
+            <label>Apellido <input type="text" required></label>
 
-                <label>Confirmar Contraseña <input type="password" id="password2" required></label>
+            <label>e-mail <input type="email" required></label>
 
-                <span id="captcha"></span> <!-- numero aleatorio de captcha generar-->
-                
-                <input type="text" id="captchaInput" required> <!-- ingresar numero de captcha -->
-            
-                <input type="submit" value="registrar" id="btn_registrar">
-                
-                <p id="mensaje"></p>
-                <p id="mensajePswd"></p>
-            </form>
-        </div>
+            <label>Usuario <input type="text" required></label>
+
+            <label>Contraseña <input type="password" id="password" required></label>
+
+            <label>Confirmar Contraseña <input type="password" id="password2" required></label>
+
+            <span id="captcha"></span> <!-- numero aleatorio de captcha generar-->
+
+            <input type="text" id="captchaInput" required> <!-- ingresar numero de captcha -->
+
+            <input type="submit" value="registrar" id="btn_registrar">
+
+            <p id="mensaje"></p>
+            <p id="mensajePswd"></p>
+        </form>
+    </div>
     <script src="js/captcha.js"></script>
-    </body>
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+
 </html>

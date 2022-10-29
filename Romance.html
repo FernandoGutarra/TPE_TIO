@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Tepee</title>
-    </head>
-    <body>
-        <div class="header">
-            <h1> Biblioteca virtual</h1>
-            <div class="headerbar">
-                <a href="index.html" id="btnInicio">Inicio</a>
-                <a href="registro.html" id="registro"><span>Registrarse</span></a>
-                <form>
-                    <label for="user">Usuario</label>
-                    <input type="text" id="user">
-                    <label for="pass">Contraseña</label>
-                    <input type="text" id="pass">
-                    <input type="submit" value="Ingresar">
-                </form>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biblioteca Virtual</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1> Biblioteca virtual</h1>
+        <div class="headerbar">
+            <a href="index.html" id="btnInicio">Inicio</a>
+            <a href="registro.html" id="registro"><span>Registrarse</span></a>
+            <form>
+                <label for="user">Usuario</label>
+                <input type="text" id="user">
+                <label for="pass">Contraseña</label>
+                <input type="text" id="pass">
+                <input type="submit" value="Ingresar">
+            </form>
+        </div>
+    </div>
+    <div class=body>
+        <div class="NabBar">
+            <div class="navBar">
+                <a href="catalogo.html" id="btnCatalogo">Catalogo</a>
+            </div>
+            <div class="navBar2">
+                <a id="genero">Genero</a>
+                <ul class="submenu ocultar">
+                    <li><a href="Aventura.html">Aventura</a></li>
+                    <li><a href="Romance.html">Romance</a></li>
+                    <li><a href="Terror.html">Terror</a></li>
+                    <li><a href="Suspenso.html">Suspenso</a></li>
+                    <li><a href="Academicos.html">Academicos</a></li>
+                </ul>
             </div>
         </div>
-        <div class=body>
-            <div class= "NabBar">
-                <div class="navBar">
-                    <a href="catalogo.html" id="btnCatalogo">Catalogo</a>
-                </div>
-                <div class= "navBar2">
-                    <a id="genero">Genero</a>
-                    <ul class="submenu ocultar">
-                        <li><a href="CuentosNinos.html">Ni&ntilde;os</a></li>
-                        <li><a href="Aventura.html">Aventura</a></li>
-                        <li><a href="Romance.html">Romance</a></li>
-                        <li><a href="Terror.html">Terror</a></li>
-                        <li><a href="Suspenso.html">Suspenso</a></li>
-                        <li><a href="Academicos.html">Academicos</a></li>
-                    </ul>
-                </div>
+        <div class=librosGenero>
+            <div class=libro>
+                <img src="imagenes/quiensos.jpg" alt="imagenes/fondopag.jpg" width="250" height="300">
+                <h3>Todo fue un sueño</h3>
+                <h4>Rodrigo Berutti</h4>
             </div>
-            <div class=librosGenero>
-                <div class = libro>
-                    <img src="imagenes/quiensos.jpg" alt="imagenes/fondopag.jpg"
-                    width="250"
-                    height="300">
-                    <h3>Todo fue un sueño</h3>
-                    <h4>Rodrigo Berutti</h4>
-                </div>
-                <div class = libro>
-                    <img src="imagenes/dracula.jpg" alt="imagenes/fondopag.jpg"
-                    width="250"
-                    height="300">
-                        <h3>Drácula</h3>
-                        <h4>Bram Stoker</h4>
-                </div>
-                <div class = libro>
-                    <img src="imagenes/detect.jpg" alt="imagenes/fondopag.jpg"
-                    width="250"
-                    height="268">
-                     <h3>Los saltadores de libros</h3>
-                      <h4>Roberto Quiroz</h4>
-                </div>
-                <div class = libro>
-                    <img src="imagenes/el5toinf.jpg" alt="imagenes/fondopag.jpg"
-                    width="250"
-                    height="300">
-                    <h3>El quinto infierno</h3>
-                    <h4>Fernando Oliverio</h4>
-                </div>
+            <div class=libro>
+                <img src="imagenes/dracula.jpg" alt="imagenes/fondopag.jpg" width="250" height="300">
+                <h3>Drácula</h3>
+                <h4>Bram Stoker</h4>
+            </div>
+            <div class=libro>
+                <img src="imagenes/detect.jpg" alt="imagenes/fondopag.jpg" width="250" height="268">
+                <h3>Los saltadores de libros</h3>
+                <h4>Roberto Quiroz</h4>
+            </div>
+            <div class=libro>
+                <img src="imagenes/el5toinf.jpg" alt="imagenes/fondopag.jpg" width="250" height="300">
+                <h3>El quinto infierno</h3>
+                <h4>Fernando Oliverio</h4>
             </div>
         </div>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+    </div>
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+
 </html>
